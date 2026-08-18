@@ -14,6 +14,7 @@ export default function Home() {
           <div className="header-happiness" aria-label="Double happiness">囍</div>
           <p className="together">TOGETHER WITH OUR FAMILIES</p>
           <p className="names">Lingbo <span>&amp;</span> Sizhen</p>
+          <p className="chinese-names">莫凌波 <span>&amp;</span> 李思珍</p>
           <p className="date-top">NOVEMBER 29, 2026 · SUNDAY</p>
         </header>
         <div className="hero-center">
