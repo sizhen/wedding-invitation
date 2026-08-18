@@ -12,11 +12,11 @@ export default function Home() {
         <div className="hero-shade" />
         <header className="hero-header">
           <div className="header-happiness" aria-label="Double happiness">囍</div>
+          <p className="together">TOGETHER WITH OUR FAMILIES</p>
+          <p className="names">Lingbo <span>&amp;</span> Sizhen</p>
           <p className="date-top">NOVEMBER 29, 2026 · SUNDAY</p>
         </header>
         <div className="hero-center">
-          <p className="together">TOGETHER WITH OUR FAMILIES</p>
-          <p className="names">Sizhen <span>&amp;</span> Beloved</p>
           <p className="invite-copy">诚挚邀请您<br />见证我们的幸福时刻</p>
         </div>
         <div className="scroll-cue" aria-hidden="true">
