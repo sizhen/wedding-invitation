@@ -1,8 +1,8 @@
 const events = [
-  { time: "10:20", title: "Guest Arrival", chinese: "迎宾", icon: "◉" },
-  { time: "11:00", title: "Ceremony", chinese: "仪式", icon: "∞" },
-  { time: "12:00", title: "Luncheon", chinese: "午宴", icon: "♢" },
-  { time: "13:30", title: "After Party", chinese: "派对", icon: "♫" },
+  { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "♢" },
+  { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "◉" },
+  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "∞" },
+  { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "✦" },
 ];
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="hero-shade" />
         <header className="hero-header">
           <p className="eyebrow">WEDDING INVITATION</p>
-          <p className="date-top">MAY 18, 2025 · SUNDAY</p>
+          <p className="date-top">NOVEMBER 29, 2026 · SUNDAY</p>
         </header>
         <div className="hero-center">
           <p className="together">TOGETHER WITH OUR FAMILIES</p>
@@ -44,9 +44,8 @@ export default function Home() {
           ))}
         </div>
         <footer className="details">
-          <p className="date-large">2025.05.18</p>
-          <p>陕西宾馆水杉林 · 西安</p>
-          <p>18号楼二层石榴厅</p>
+          <p className="date-large">2026.11.29</p>
+          <p>舜杰明都 · 常州</p>
           <div className="seal">囍</div>
         </footer>
       </section>
