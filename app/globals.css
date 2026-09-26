@@ -12,10 +12,10 @@ body { margin: 0; background: #181512; color: white; font-family: "Wedding Serif
 main { width: 100%; overflow: hidden; }
 .hero { position: relative; min-height: 100svh; display: grid; grid-template-rows: auto 1fr auto; padding: 7vh 7vw 5vh; background: url('/couple.JPG') center 35% / cover no-repeat; isolation: isolate; }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(20,8,3,.34), rgba(20,8,3,.04) 40%, rgba(20,8,3,.62)); }
-.hero-art { position: absolute; inset: 0 0 auto; z-index: -1; height: clamp(7.5rem, 33.333vw, 10.85rem); overflow: hidden; background: #f8f6f1; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.78) 76%, rgba(0,0,0,.28) 90%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.78) 76%, rgba(0,0,0,.28) 90%, transparent 100%); }
+.hero-art { position: absolute; inset: 0 0 auto; z-index: -1; height: clamp(10rem, 46vw, 15rem); overflow: hidden; background: #f8f6f1; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.82) 80%, rgba(0,0,0,.32) 92%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0,0,0,.82) 80%, rgba(0,0,0,.32) 92%, transparent 100%); }
 .hero-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: saturate(.92) brightness(1.03); }
 .hero-header { text-align: center; letter-spacing: .16em; text-shadow: 0 1px 12px rgba(0,0,0,.5); }
-.header-art-spacer { height: clamp(3.2rem, 14.4vw, 4.4rem); }
+.header-art-spacer { height: clamp(5rem, 22vw, 7rem); }
 .eyebrow { margin: 0; font: 600 clamp(.68rem, 2.7vw, .82rem)/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .27em; }
 .date-top { margin: .65rem 0 0; font: 400 .67rem/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .22em; }
 .hero-center { align-self: end; padding-bottom: 2vh; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,.42); }
