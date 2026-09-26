@@ -1,8 +1,8 @@
 const events = [
-  { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "♢" },
-  { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "◉" },
-  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "∞" },
-  { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "✦" },
+  { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "/icons/bowl-chopsticks.svg" },
+  { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "/icons/camera.svg" },
+  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "/icons/cheers.svg", iconClass: "cheers" },
+  { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "/icons/sparkles.svg", iconClass: "fireworks" },
 ];
 
 export default function Home() {
@@ -39,7 +39,9 @@ export default function Home() {
           {events.map((event) => (
             <article className="event" key={event.time}>
               <time>{event.time}</time><span className="dot" />
-              <span className="event-icon" aria-hidden="true">{event.icon}</span>
+              <span className={`event-icon ${event.iconClass ?? ""}`} aria-hidden="true">
+                <img src={event.icon} alt="" />
+              </span>
               <div><h2>{event.title}</h2><p>{event.chinese}</p></div>
             </article>
           ))}
