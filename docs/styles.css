@@ -1,6 +1,6 @@
 @font-face { font-family: "Wedding Brush"; src: url("fonts/wedding-brush.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+51CC, U+601D, U+674E, U+6CE2, U+73CD, U+83AB; }
-@font-face { font-family: "Wedding Script"; src: url("fonts/wedding-script.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
 @font-face { font-family: "Wedding Serif"; src: url("fonts/wedding-serif.woff2") format("woff2"); font-style: normal; font-weight: 300 700; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
+@font-face { font-family: "Wedding Serif"; src: url("fonts/wedding-serif-italic.woff2") format("woff2"); font-style: italic; font-weight: 300 700; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
 @font-face { font-family: "Wedding Sans"; src: url("fonts/wedding-sans.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
 :root { --red: #a62b26; --ink: #352d2a; --paper: #f4eee2; }
 * { box-sizing: border-box; }
@@ -15,7 +15,7 @@ main { width: 100%; overflow: hidden; }
 .hero-center { align-self: end; padding-bottom: 2vh; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,.42); }
 .together { margin: 2.35rem 0 .42rem; font: 600 .58rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .28em; }
 .header-happiness { color: #e1362d; font-family: "Songti SC", "STSong", serif; font-size: clamp(4rem, 18vw, 5.5rem); font-weight: 900; line-height: .8; filter: drop-shadow(0 2px 8px rgba(55,0,0,.3)); }
-.names { margin: .25rem 0 .68rem; font: 400 1.85rem/1.2 "Wedding Script", "Snell Roundhand", "Brush Script MT", cursive; }
+.names { margin: .25rem 0 .68rem; font: italic 600 1.8rem/1.2 "Wedding Serif", Georgia, serif; letter-spacing: .025em; }
 .names span, .chinese-names span { color: #e44a3f; padding: 0 .2em; }
 .chinese-names { margin: 0 0 .75rem; font-family: "Wedding Brush", "STXingkai", "Xingkai SC", "华文行楷", "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif; font-size: clamp(1.12rem, 4.4vw, 1.38rem); font-weight: 400; line-height: 1.35; letter-spacing: .14em; }
 .invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .18em; }
