@@ -1,8 +1,8 @@
 const events = [
-  { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "♢" },
-  { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "◉" },
-  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "∞" },
-  { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "✦" },
+  { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "/icons/bowl-chopsticks.svg" },
+  { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "/icons/camera.svg" },
+  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "/icons/cheers.svg", iconClass: "cheers" },
+  { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "/icons/sparkles.svg", iconClass: "fireworks" },
 ];
 
 export default function Home() {
@@ -18,18 +18,19 @@ export default function Home() {
         </header>
         <div className="hero-center">
           <p className="chinese-names">莫凌波 <span>&amp;</span> 李思珍</p>
-          <p className="invite-copy">26/11/29 ｜ 江苏常州舜杰明都</p>
+          <p className="invite-copy">26/11/29 ｜ 舜杰明都 · 常州 · 江苏</p>
         </div>
         <div className="scroll-cue" aria-hidden="true">
           <span>SCROLL TO DISCOVER</span><i />
         </div>
       </section>
 
-      <section className="timeline-section" aria-labelledby="timeline-title">
+      <section className="timeline-section" aria-label="Wedding day schedule">
         <div className="paper-noise" />
-        <div className="whale-mark" aria-hidden="true">◡　◡</div>
+        <div className="timeline-art" aria-hidden="true">
+          <img src="/changzhou-dinosour2.png" alt="" />
+        </div>
         <p className="eyebrow dark">OUR WEDDING DAY</p>
-        <h1 id="timeline-title">Wedding Timeline</h1>
         <p className="intro">诚挚地邀请您作为最重要的家人和朋友<br />出席我们的婚礼</p>
         <div className="couple-doodle" aria-hidden="true">
           <span>♙</span><span className="heart">♡</span><span>♕</span>
@@ -38,14 +39,16 @@ export default function Home() {
           {events.map((event) => (
             <article className="event" key={event.time}>
               <time>{event.time}</time><span className="dot" />
-              <span className="event-icon" aria-hidden="true">{event.icon}</span>
+              <span className={`event-icon ${event.iconClass ?? ""}`} aria-hidden="true">
+                <img src={event.icon} alt="" />
+              </span>
               <div><h2>{event.title}</h2><p>{event.chinese}</p></div>
             </article>
           ))}
         </div>
         <footer className="details">
-          <p className="date-large">2026.11.29</p>
-          <p>舜杰明都 · 常州</p>
+          <p className="detail-heading">Address</p>
+          <p className="address-line">江苏省常州市天宁区焦溪镇常焦路2号</p>
           <div className="seal">囍</div>
         </footer>
       </section>
