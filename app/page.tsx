@@ -1,7 +1,7 @@
 const events = [
   { time: "11:58", title: "Luncheon", chinese: "午宴", icon: "/icons/bowl-chopsticks.svg" },
   { time: "17:00", title: "Guest Arrival", chinese: "迎宾", icon: "/icons/camera.svg" },
-  { time: "18:08", title: "Ceremony", chinese: "仪式", icon: "/icons/cheers.svg", iconClass: "cheers" },
+  { time: "18:08", title: "Ceremony & Dinner", chinese: "仪式&晚宴", icon: "/icons/cheers.svg", iconClass: "cheers" },
   { time: "20:30", title: "Fireworks", chinese: "烟花", icon: "/icons/sparkles.svg", iconClass: "fireworks" },
 ];
 
@@ -12,13 +12,13 @@ export default function Home() {
         <div className="hero-shade" />
         <header className="hero-header">
           <div className="header-happiness" aria-label="Double happiness">囍</div>
-          <p className="together">TOGETHER WITH OUR FAMILIES</p>
+          <p className="welcome">Welcome to our wedding</p>
           <p className="names">Lingbo <span>&amp;</span> Sizhen</p>
-          <p className="date-top">NOVEMBER 29, 2026 · SUNDAY</p>
+          <p className="together">TOGETHER WITH OUR FAMILIES</p>
         </header>
         <div className="hero-center">
           <p className="chinese-names">莫凌波 <span>&amp;</span> 李思珍</p>
-          <p className="invite-copy">26/11/29 ｜ 舜杰明都 · 常州 · 江苏</p>
+          <p className="invite-copy"><span className="invite-date">26/11/29 Sunday</span> ｜ 舜杰明都 · 常州 · 江苏</p>
         </div>
         <div className="scroll-cue" aria-hidden="true">
           <span>SCROLL TO DISCOVER</span><i />
@@ -32,9 +32,6 @@ export default function Home() {
         </div>
         <p className="eyebrow dark">OUR WEDDING DAY</p>
         <p className="intro">诚挚地邀请您作为最重要的家人和朋友<br />出席我们的婚礼</p>
-        <div className="couple-doodle" aria-hidden="true">
-          <span>♙</span><span className="heart">♡</span><span>♕</span>
-        </div>
         <div className="timeline">
           {events.map((event) => (
             <article className="event" key={event.time}>

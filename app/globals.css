@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @font-face { font-family: "Wedding Brush"; src: url("/fonts/wedding-brush.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+51CC, U+601D, U+674E, U+6CE2, U+73CD, U+83AB; }
+@font-face { font-family: "Wedding Xingshu"; src: url("/fonts/wedding-xingshu.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: "Wedding Serif"; src: url("/fonts/wedding-serif.woff2") format("woff2"); font-style: normal; font-weight: 300 700; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
 @font-face { font-family: "Wedding Serif"; src: url("/fonts/wedding-serif-italic.woff2") format("woff2"); font-style: italic; font-weight: 300 700; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
 @font-face { font-family: "Wedding Sans"; src: url("/fonts/wedding-sans.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+0020-007E, U+00B7; }
@@ -16,16 +17,18 @@ main { width: 100%; overflow: hidden; }
 .eyebrow { margin: 0; font: 600 clamp(.68rem, 2.7vw, .82rem)/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .27em; }
 .date-top { margin: .65rem 0 0; font: 400 .67rem/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .22em; }
 .hero-center { align-self: end; padding-bottom: 2vh; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,.42); }
-.together { margin: 2.35rem 0 .42rem; font: 600 .58rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .28em; }
+.welcome { margin: 2.35rem 0 .42rem; font: italic 500 1.02rem/1.3 "Wedding Serif", Georgia, serif; letter-spacing: .12em; }
+.together { margin: .55rem 0 0; font: 600 .58rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .28em; }
 .header-happiness { color: #e1362d; font-family: "Songti SC", "STSong", serif; font-size: clamp(4rem, 18vw, 5.5rem); font-weight: 900; line-height: .8; filter: drop-shadow(0 2px 8px rgba(55,0,0,.3)); }
 .names { margin: .25rem 0 .68rem; font: italic 600 1.8rem/1.2 "Wedding Serif", Georgia, serif; letter-spacing: .025em; }
 .names span { color: #e44a3f; padding: 0 .25em; }
-.chinese-names { margin: 0 0 .75rem; font-family: "Wedding Brush", "STXingkai", "Xingkai SC", "华文行楷", "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif; font-size: clamp(1.12rem, 4.4vw, 1.38rem); font-weight: 400; line-height: 1.35; letter-spacing: .14em; }
+.chinese-names { margin: 0 0 .75rem; font-family: "Xingkai SC", "STXingkai", "华文行楷", "Wedding Xingshu", "Kaiti SC", "STKaiti", serif; font-size: clamp(1.5rem, 6vw, 1.9rem); font-weight: 700; line-height: 1.35; letter-spacing: .14em; }
 .chinese-names span { color: #e44a3f; padding: 0 .15em; }
 .invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .18em; }
+.invite-date { font-size: 1.1rem; font-weight: 700; letter-spacing: .12em; color: #ff5a4d; }
 .scroll-cue { justify-self: center; display: grid; justify-items: center; gap: .7rem; font: 500 .55rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .22em; }
 .scroll-cue i { display: block; width: 1px; height: 2.7rem; background: rgba(255,255,255,.8); animation: pulse 1.8s ease-in-out infinite; transform-origin: top; }
-.timeline-section { --timeline-pad: max(7vw, 1.5rem); position: relative; min-height: 100svh; padding: 0 var(--timeline-pad) 8vh; color: var(--ink); background: var(--paper); text-align: center; isolation: isolate; }
+.timeline-section { --timeline-pad: max(7vw, 1.5rem); position: relative; padding: 0 var(--timeline-pad) clamp(3rem, 8vh, 5rem); color: var(--ink); background: var(--paper); text-align: center; isolation: isolate; }
 .paper-noise { position: absolute; inset: 0; z-index: -1; opacity: .42; background-image: radial-gradient(#8e7861 0.55px, transparent .7px), radial-gradient(#fff 0.6px, transparent .75px); background-position: 0 0, 7px 8px; background-size: 11px 11px; }
 .timeline-art { width: calc(100% + var(--timeline-pad) + var(--timeline-pad)); margin: 0 calc(0px - var(--timeline-pad)) clamp(1rem, 4vw, 1.5rem); background: var(--paper); }
 .timeline-art img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; filter: saturate(.9) brightness(1.02); }
@@ -38,11 +41,12 @@ main { width: 100%; overflow: hidden; }
 .event { display: grid; grid-template-columns: 29% 10% 11% 1fr; align-items: center; min-height: 4.55rem; text-align: left; }
 .event time { text-align: right; font: 700 1.05rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .05em; }
 .dot { position: relative; justify-self: center; width: 7px; height: 7px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px var(--paper); }
-.event-icon { width: 100%; height: 2rem; display: grid; place-items: center; }
+.event-icon { width: 100%; height: 2rem; display: grid; place-items: center end; }
 .event-icon img { display: block; width: 1.68rem; height: 1.68rem; }
 .event-icon.cheers img { width: 1.9rem; height: 1.9rem; }
 .event-icon.fireworks img { width: 1.82rem; height: 1.82rem; }
-.event h2 { margin: 0; font-size: 1.12rem; font-weight: 500; }
+.event > div { padding-left: .6rem; }
+.event h2 { margin: 0; font-size: 1.12rem; font-weight: 500; white-space: nowrap; }
 .event p { margin: .2rem 0 0; font-size: .78rem; letter-spacing: .18em; }
 .details { border-top: 1px solid rgba(53,45,42,.22); padding-top: 1.9rem; position: relative; max-width: 28rem; margin: 0 auto; }
 .details p { margin: .35rem 0; font-size: .88rem; letter-spacing: .1em; }
