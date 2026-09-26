@@ -18,7 +18,7 @@ export default function Home() {
         </header>
         <div className="hero-center">
           <p className="chinese-names">莫凌波 <span>&amp;</span> 李思珍</p>
-          <p className="invite-copy"><span className="invite-date">26/11/29 Sunday</span> ｜ <span className="invite-venue">舜杰明都 · 常州 · 江苏</span></p>
+          <p className="invite-copy"><span className="invite-date">26/11/29 Sunday</span> ｜ <span className="invite-venue">舜杰明都 · 常州</span></p>
         </div>
         <div className="scroll-cue" aria-hidden="true">
           <span>SCROLL TO DISCOVER</span><i />
