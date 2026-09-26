@@ -25,13 +25,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="timeline-section" aria-labelledby="timeline-title">
+      <section className="timeline-section" aria-label="Wedding day schedule">
         <div className="paper-noise" />
         <div className="timeline-art" aria-hidden="true">
           <img src="/changzhou-dinosour.png" alt="" />
         </div>
         <p className="eyebrow dark">OUR WEDDING DAY</p>
-        <h1 id="timeline-title">Wedding Timeline</h1>
         <p className="intro">诚挚地邀请您作为最重要的家人和朋友<br />出席我们的婚礼</p>
         <div className="couple-doodle" aria-hidden="true">
           <span>♙</span><span className="heart">♡</span><span>♕</span>
