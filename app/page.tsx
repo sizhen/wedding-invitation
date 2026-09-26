@@ -10,8 +10,11 @@ export default function Home() {
     <main>
       <section className="hero" aria-label="Wedding invitation cover">
         <div className="hero-shade" />
+        <div className="hero-art" aria-hidden="true">
+          <img src="/changzhou-dinosour.png" alt="" />
+        </div>
         <header className="hero-header">
-          <div className="header-happiness" aria-label="Double happiness">囍</div>
+          <div className="header-art-spacer" aria-hidden="true" />
           <p className="together">TOGETHER WITH OUR FAMILIES</p>
           <p className="names">Lingbo <span>&amp;</span> Sizhen</p>
           <p className="date-top">NOVEMBER 29, 2026 · SUNDAY</p>

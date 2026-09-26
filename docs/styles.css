@@ -9,12 +9,14 @@ body { margin: 0; background: #181512; color: white; font-family: "Wedding Serif
 main { width: 100%; overflow: hidden; }
 .hero { position: relative; min-height: 100svh; display: grid; grid-template-rows: auto 1fr auto; padding: 7vh 7vw 5vh; background: url('couple.JPG') center 35% / cover no-repeat; isolation: isolate; }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(20,8,3,.34), rgba(20,8,3,.04) 40%, rgba(20,8,3,.62)); }
+.hero-art { position: absolute; inset: 0 0 auto; z-index: -1; height: clamp(7.5rem, 33.333vw, 10.85rem); overflow: hidden; background: #f8f6f1; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.78) 76%, rgba(0,0,0,.28) 90%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.78) 76%, rgba(0,0,0,.28) 90%, transparent 100%); }
+.hero-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: saturate(.92) brightness(1.03); }
 .hero-header { text-align: center; letter-spacing: .16em; text-shadow: 0 1px 12px rgba(0,0,0,.5); }
+.header-art-spacer { height: clamp(3.2rem, 14.4vw, 4.4rem); }
 .eyebrow { margin: 0; font: 600 clamp(.68rem, 2.7vw, .82rem)/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .27em; }
 .date-top { margin: .65rem 0 0; font: 400 .67rem/1.4 "Wedding Sans", Arial, sans-serif; letter-spacing: .22em; }
 .hero-center { align-self: end; padding-bottom: 2vh; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,.42); }
 .together { margin: 2.35rem 0 .42rem; font: 600 .58rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .28em; }
-.header-happiness { color: #e1362d; font-family: "Songti SC", "STSong", serif; font-size: clamp(4rem, 18vw, 5.5rem); font-weight: 900; line-height: .8; filter: drop-shadow(0 2px 8px rgba(55,0,0,.3)); }
 .names { margin: .25rem 0 .68rem; font: italic 600 1.8rem/1.2 "Wedding Serif", Georgia, serif; letter-spacing: .025em; }
 .names span, .chinese-names span { color: #e44a3f; padding: 0 .2em; }
 .chinese-names { margin: 0 0 .75rem; font-family: "Wedding Brush", "STXingkai", "Xingkai SC", "华文行楷", "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif; font-size: clamp(1.12rem, 4.4vw, 1.38rem); font-weight: 400; line-height: 1.35; letter-spacing: .14em; }
