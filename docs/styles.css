@@ -20,7 +20,8 @@ main { width: 100%; overflow: hidden; }
 .names { margin: .25rem 0 .68rem; font: italic 600 1.8rem/1.2 "Wedding Serif", Georgia, serif; letter-spacing: .025em; }
 .names span, .chinese-names span { color: #e44a3f; padding: 0 .2em; }
 .chinese-names { margin: 0 0 .75rem; font-family: "Xingkai SC", "STXingkai", "华文行楷", "Wedding Xingshu", "Kaiti SC", "STKaiti", serif; font-size: clamp(1.5rem, 6vw, 1.9rem); font-weight: 700; line-height: 1.35; letter-spacing: .14em; }
-.invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .18em; }
+.invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .1em; text-wrap: balance; }
+.invite-venue { white-space: nowrap; }
 .invite-date { font-size: 1.1rem; font-weight: 700; letter-spacing: .12em; color: #ff5a4d; }
 .scroll-cue { justify-self: center; display: grid; justify-items: center; gap: .7rem; font: 500 .55rem/1 "Wedding Sans", Arial, sans-serif; letter-spacing: .22em; }
 .scroll-cue i { display: block; width: 1px; height: 2.7rem; background: rgba(255,255,255,.8); animation: pulse 1.8s ease-in-out infinite; transform-origin: top; }
