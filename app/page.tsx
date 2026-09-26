@@ -28,7 +28,7 @@ export default function Home() {
       <section className="timeline-section" aria-label="Wedding day schedule">
         <div className="paper-noise" />
         <div className="timeline-art" aria-hidden="true">
-          <img src="/changzhou-dinosour.png" alt="" />
+          <img src="/changzhou-dinosour2.png" alt="" />
         </div>
         <p className="eyebrow dark">OUR WEDDING DAY</p>
         <p className="intro">诚挚地邀请您作为最重要的家人和朋友<br />出席我们的婚礼</p>
