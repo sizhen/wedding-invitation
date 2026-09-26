@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@font-face { font-family: "Wedding Brush"; src: url("/fonts/wedding-brush.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; unicode-range: U+51CC, U+601D, U+674E, U+6CE2, U+73CD, U+83AB; }
+
 :root { --red: #a62b26; --ink: #352d2a; --paper: #f4eee2; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -15,7 +17,7 @@ main { width: 100%; overflow: hidden; }
 .header-happiness { color: #e1362d; font-family: "Songti SC", "STSong", serif; font-size: clamp(4rem, 18vw, 5.5rem); font-weight: 900; line-height: .8; filter: drop-shadow(0 2px 8px rgba(55,0,0,.3)); }
 .names { margin: .25rem 0 .68rem; font: italic 1.65rem/1.2 "Snell Roundhand", "Brush Script MT", cursive; }
 .names span { color: #e44a3f; padding: 0 .25em; }
-.chinese-names { margin: 0 0 .75rem; font-family: "STXingkai", "Xingkai SC", "华文行楷", "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif; font-size: clamp(1.12rem, 4.4vw, 1.38rem); font-weight: 400; line-height: 1.35; letter-spacing: .14em; }
+.chinese-names { margin: 0 0 .75rem; font-family: "Wedding Brush", "STXingkai", "Xingkai SC", "华文行楷", "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif; font-size: clamp(1.12rem, 4.4vw, 1.38rem); font-weight: 400; line-height: 1.35; letter-spacing: .14em; }
 .chinese-names span { color: #e44a3f; padding: 0 .15em; }
 .invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .18em; }
 .scroll-cue { justify-self: center; display: grid; justify-items: center; gap: .7rem; font: 500 .55rem/1 Arial, sans-serif; letter-spacing: .22em; }
