@@ -19,7 +19,7 @@ main { width: 100%; overflow: hidden; }
 .header-happiness { color: #e1362d; font-family: "Songti SC", "STSong", serif; font-size: clamp(4rem, 18vw, 5.5rem); font-weight: 900; line-height: .8; filter: drop-shadow(0 2px 8px rgba(55,0,0,.3)); }
 .names { margin: .25rem 0 .68rem; font: italic 600 1.8rem/1.2 "Wedding Serif", Georgia, serif; letter-spacing: .025em; }
 .names span, .chinese-names span { color: #e44a3f; padding: 0 .2em; }
-.chinese-names { margin: 0 0 .75rem; font-family: "Wedding Xingshu", "Xingkai SC", "STXingkai", "华文行楷", "Kaiti SC", "STKaiti", serif; font-size: clamp(1.5rem, 6vw, 1.9rem); font-weight: 700; line-height: 1.35; letter-spacing: .14em; }
+.chinese-names { margin: 0 0 .75rem; font-family: "Xingkai SC", "STXingkai", "华文行楷", "Wedding Xingshu", "Kaiti SC", "STKaiti", serif; font-size: clamp(1.5rem, 6vw, 1.9rem); font-weight: 700; line-height: 1.35; letter-spacing: .14em; }
 .invite-copy { margin: 0; font-size: .9rem; line-height: 1.8; letter-spacing: .1em; text-wrap: balance; }
 .invite-venue { white-space: nowrap; }
 .invite-date { font-size: 1.1rem; font-weight: 700; letter-spacing: .12em; color: #ff5a4d; }
