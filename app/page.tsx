@@ -18,7 +18,7 @@ export default function Home() {
         </header>
         <div className="hero-center">
           <p className="chinese-names">莫凌波 <span>&amp;</span> 李思珍</p>
-          <p className="invite-copy">26/11/29 ｜ 江苏常州舜杰明都</p>
+          <p className="invite-copy">26/11/29 ｜ 舜杰明都 · 常州 · 江苏</p>
         </div>
         <div className="scroll-cue" aria-hidden="true">
           <span>SCROLL TO DISCOVER</span><i />
@@ -45,8 +45,8 @@ export default function Home() {
           ))}
         </div>
         <footer className="details">
-          <p className="date-large">2026.11.29</p>
-          <p>舜杰明都 · 常州</p>
+          <p className="detail-heading">Address</p>
+          <p className="address-line">江苏省常州市天宁区焦溪镇常焦路2号</p>
           <div className="seal">囍</div>
         </footer>
       </section>

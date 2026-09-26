@@ -39,7 +39,8 @@ main { width: 100%; overflow: hidden; }
 .event p { margin: .2rem 0 0; font-size: .78rem; letter-spacing: .18em; }
 .details { border-top: 1px solid rgba(53,45,42,.22); padding-top: 1.9rem; position: relative; max-width: 28rem; margin: 0 auto; }
 .details p { margin: .35rem 0; font-size: .88rem; letter-spacing: .1em; }
-.details .date-large { margin-bottom: .8rem; color: var(--red); font: 500 1.5rem/1 "Wedding Serif", Georgia, serif; letter-spacing: .08em; }
+.details .detail-heading { margin-bottom: .8rem; color: var(--red); font: 500 1.5rem/1 "Wedding Serif", Georgia, serif; letter-spacing: .08em; }
+.details .address-line { line-height: 1.7; letter-spacing: .08em; }
 .seal { width: 2.2rem; height: 2.2rem; margin: 1.25rem auto 0; display: grid; place-items: center; color: var(--paper); background: var(--red); font-size: 1.2rem; }
 @keyframes pulse { 0%,100% { transform: scaleY(.35); opacity: .35; } 50% { transform: scaleY(1); opacity: 1; } }
 @media (min-width: 700px) { body { background: #2c2824; } main { max-width: 520px; margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,.35); } .hero { padding-left: 2.5rem; padding-right: 2.5rem; } }
