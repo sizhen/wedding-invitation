@@ -7,5 +7,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="zh-CN"><body>{children}</body></html>;
+  return (
+    <html lang="zh-CN">
+      <head>
+        <link rel="preload" href="/fonts/wedding-brush.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/wedding-script.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/wedding-serif.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/wedding-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
 }
